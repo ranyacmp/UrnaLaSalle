@@ -12,14 +12,14 @@
         width:100%;
         text-align: center;
         position: absolute;
-        top:100px;
+        top:90px;
     }
     #foto{
         width: 550px;
     }
     #div2{
         position: relative;
-        top:500px;
+        top:400px;
         width: 100%;
         text-align: center;
     }
