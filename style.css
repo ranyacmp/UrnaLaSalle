@@ -89,7 +89,7 @@ a:active{
         margin:auto;
         top:70px;
         border-radius: 30px;
-        display:block;
+        display:none;
     }
 
     #formulario{
@@ -122,7 +122,7 @@ a:active{
         bottom: 20px;
         left: 15px;
     }
-    #foto{
+    #fotocandidato{
         background-color: rgb(255,255,255, 0.3);
         width: 100px;
         height: 160px;
