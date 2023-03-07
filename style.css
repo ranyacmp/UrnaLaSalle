@@ -5,16 +5,16 @@
     background-color: #d0e0eb;
 }
 
-@media screen and (min-width:700px){
+@media screen and (min-width:1000px){
 
     #div1{
         width:100%;
         text-align: center;
         position: relative;
-        top:200px;
+        top:100px;
     }
     #foto{
-        width: 650px;
+        width: 550px;
     }
 
 }
