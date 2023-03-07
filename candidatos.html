@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urna LaSalle</title>
     <link rel="stylesheet" href="style.css" type="text/css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Fredoka+One&display=swap" rel="stylesheet">
    
 </head>
 <body>
     
+
     <div id="divcandidato"> 
         
         <div class="candidato">
-            <button id="adccandidato">
+            <button type="button" id="adccandidato">
 
                 <ion-icon name="add-outline"></ion-icon>
 
@@ -21,10 +25,51 @@
         </div>
         
     </div>
+
+    <div class="questionario">
+
+        <form id="formulario" method="post">
+
+                <label for="nome" class="titulo"> Representante: </label><br>
+                <input type="text" name="nome" class="input" required><br><br>
+                
+
+                <label for="nome" class="titulo"> Vice - representante: </label><br>
+                <input type="text" name="nome" class="input" required><br><br>
+
+
+                <label for="nome" class="titulo"> Turma </label><br>
+                <select class="input" name="select">
+
+                    <option value="valor1" selected >turma</option>
+                    <option value="valor2" >Turma 1</option>
+                    <option value="valor3">Turma 2</option>
+
+                </select>
+
+        </form><br><br>
+
+            <div id="foto"> 
+                
+                <button type="button" id="enviarfoto">
+
+                    <ion-icon name="add-outline"></ion-icon>
+    
+                </button>
+            
+            </div>
+
+            <button id="adicionar">ADICIONAR</button>
+
+    </div>
+
+   
+        
      
 
     <script src="acao.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>
