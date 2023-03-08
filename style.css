@@ -40,30 +40,39 @@ a:active{
     }
     #div2{
         position: relative;
-        top:330px;
+        top:340px;
         width: 100%;
         text-align: center;
     }
     #comecar{
-        font-family: 'Anton', sans-serif;
-        font-size: 55px;
-        letter-spacing: 6px;
+        font-family: 'Tilt Warp', cursive;
+        font-size: 50px;
+        letter-spacing: 1px;
         color: rgb(255, 255, 255);
         text-shadow:1px 1px 2px rgb(255, 255, 255);
+    }
+
+    h1{
+        font-family: 'Tilt Warp', cursive;
+        font-size:50px;
+        letter-spacing: 3px;
+        color: rgb(255, 255, 255);
+        margin-top: 30px;
+        margin-left: 34px;
     }
     #divcandidato{
         width: 100%;
         height: 200px;
         position: absolute;
-        top:50px;
+        top:150px;
         display: flex;
         align-items: center;
         
     }
     .candidato{
         background-color: rgb(255,255,255, 0.3);
-        width: 150px;
-        height: 190px;
+        width: 200px;
+        height: 250px;
         position: relative;
         margin:30px;
         border-radius: 15px;
@@ -77,41 +86,42 @@ a:active{
     }
     ion-icon{
         color: rgb(255,255,255, 0.8);
-        font-size: 50px;
+        font-size: 60px;
         border-radius: 100%;
         background-color:rgb(255,255,255, 0.05);
     }
     .questionario{
-        width: 350px;
-        height: 300px;
+        width: 450px;
+        height: 400px;
         background-color: rgb(233,194,25, 0.8);
         position: relative;
-        margin:auto;
-        top:70px;
+        left: 400px;
+        top:-45px;
         border-radius: 30px;
-        display:none;
+        display:block;
     }
 
     #formulario{
         background-color: rgb(233,194,25, 0);
         position: relative;
         left: 15px;
-        top: 30px
+        top: 40px
     }
     .titulo{
         font-family: 'Anton', sans-serif;
         color: rgb(0,61,123);
         background-color: rgb(233,194,25, 0);
-        font-size: 20px;
+        font-size: 28px;
     }
     .input{
         font-family: arial;
         font-weight: bold;
-        width: 190px;
-        height: 25px;
+        width: 240px;
+        height: 35px;
         color: black;
         background-color: rgb(255,255,255);
         border-radius: 5px;
+        font-size: 15px;
     }
     option{
         background-color: white;
@@ -121,21 +131,21 @@ a:active{
         padding:5px;
         color: rgb(0,61,123);
         background-color: rgb(255,255,255);
-        font-size: 15px;
+        font-size: 20px;
         position:absolute;
         bottom: 20px;
         left: 15px;
     }
     #fotocandidato{
         background-color: rgb(255,255,255, 0.3);
-        width: 125px;
-        height: 185px;
+        width: 160px;
+        height: 260px;
         border-radius: 15px;
         display: flex;
         align-items: center;
         position: relative;
-        bottom: 190px;
-        left: 215px;
+        bottom: 252px;
+        left: 275px;
     }
 
     #enviarfoto{
