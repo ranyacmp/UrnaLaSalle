@@ -89,7 +89,7 @@ a:active{
         margin:auto;
         top:70px;
         border-radius: 30px;
-        display:block;
+        display:none;
     }
 
     #formulario{
