@@ -19,13 +19,27 @@
     <h1>CANDIDATOS:</h1>
 
     <div id="divcandidato"> 
+
+        <div id="info">
+
+            <div id="info2">
+                <p id="numero">10</p>
+                <img id="imagem" src="foto.jpg">
+                
+                <p id="representante">Ranya Campanario</p>
+                <p id="vice-representante">Rennan Cabral</p>
+            </div>
+
+        </div>
         
         <div class="candidato">
+
             <button type="button" id="adccandidato">
 
                 <ion-icon name="add-outline"></ion-icon>
 
             </button>
+
         </div>
         
     </div>
@@ -35,19 +49,15 @@
         <form id="formulario" method="post">
 
                 <label for="nome" class="titulo"> Representante: </label><br>
-                <input type="text" name="nome" class="input" required><br><br>
+                <input type="text" name="nome" class="input" maxlength="20" required><br><br>
                 
 
                 <label for="nome" class="titulo"> Vice - representante: </label><br>
-                <input type="text" name="nome" class="input" required><br><br>
+                <input type="text" name="nome" class="input" maxlength="16" required><br><br>
 
 
-                <label for="nome" class="titulo"> Turma </label><br>
-                <select class="input" name="select" required>
-
-                    <option value="valor1" selected >turma</option>
-                    <option value="valor2" >Turma 1</option>
-                    <option value="valor3">Turma 2</option>
+                <label for="nome" class="titulo"> Número: </label><br>
+                <input type="number" name="nome" class="input" required><br><br>
 
                 </select>
 
@@ -73,7 +83,10 @@
             
             </div>
 
-            <button id="adicionar">ADICIONAR</button>
+            <label for="nome" class="titulo"> Número: </label><br>
+            <input type="number" name="nome" class="input" maxlength="16" required><br><br>
+
+            <button type="button" id="adicionar">ADICIONAR</button>
 
     </div>
 
