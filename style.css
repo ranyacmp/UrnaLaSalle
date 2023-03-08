@@ -75,7 +75,7 @@ a:active{
         background-color:rgb(255,255,255, 0);
         margin:auto;
     }
-    ion-icon {
+    ion-icon{
         color: rgb(255,255,255, 0.8);
         font-size: 50px;
         border-radius: 100%;
@@ -89,7 +89,7 @@ a:active{
         margin:auto;
         top:70px;
         border-radius: 30px;
-        display:none;
+        display:block;
     }
 
     #formulario{
@@ -105,12 +105,16 @@ a:active{
         font-size: 20px;
     }
     .input{
-        font-family: 'Anton', sans-serif;
+        font-family: arial;
+        font-weight: bold;
         width: 190px;
-        height: 20px;
+        height: 25px;
         color: black;
         background-color: rgb(255,255,255);
         border-radius: 5px;
+    }
+    option{
+        background-color: white;
     }
     #adicionar{
         font-family: 'Anton', sans-serif;
@@ -124,12 +128,36 @@ a:active{
     }
     #fotocandidato{
         background-color: rgb(255,255,255, 0.3);
-        width: 100px;
-        height: 160px;
-        position: relative;
+        width: 125px;
+        height: 185px;
         border-radius: 15px;
         display: flex;
         align-items: center;
+        position: relative;
+        bottom: 190px;
+        left: 215px;
+    }
+
+    #enviarfoto{
+        background-color:rgb(255,255,255, 0);
+        margin:auto;
+    }
+
+    #botaoclose{
+        position:absolute;
+        top:10px;
+        right: 20px;;
+        background-color:rgb(255,255,255, 0);
+
+    }
+    #fechar{
+        color: rgb(255,255,255, 0.8);
+        font-size:40px;
+        border-radius: 100%;
+        background-color:rgb(255,255,255, 0);
+    }
+    #fecharquestionario{
+        background-color:rgb(255,255,255, 0);
     }
     
 
