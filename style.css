@@ -60,18 +60,23 @@ a:active{
         margin-top: 30px;
         margin-left: 34px;
     }
-    #info{
+    .divcandidato{
+        width: 100%;
+        height:300px;
+        position: absolute;
+        top:130px;
+        display: flex;
+        float:left;   
+        align-items: center;
+    }
+    
+    .info{
         background-color: rgb(233,194,25, 0.9);
         width: 200px;
         height: 250px;
-        position: relative;
-        margin:30px;
-        border-radius: 15px;
+        border-radius: 15px; 
+        margin: 15px;
         display: none;
-        align-items: center;
-    }
-    #info2{
-        background-color: rgb(233,194,25, 0);
     }
     #numero{
         font-family: 'Tilt Warp', cursive;
@@ -82,8 +87,8 @@ a:active{
         text-align: center;
         color:white;
         position: absolute;
-        top:-5px;
-        left:-5px;
+        top:5px;
+        left:5px;
         z-index:1;
     }
     #imagem{
@@ -121,25 +126,14 @@ a:active{
         left: 18px;
         top:-5px;
     }
-    #divcandidato{
-        width: 100%;
-        height: 200px;
-        position: absolute;
-        top:150px;
-        display: flex;
-        align-items: center;
-        
-    }
-    .candidato{
+    #candidato{
         background-color: rgb(255,255,255, 0.3);
         width: 200px;
         height: 250px;
-        position: relative;
-        margin:30px;
         border-radius: 15px;
         display: flex;
-        align-items: center;
-        
+        align-items: center;  
+        margin: 15px;
     }
     #adccandidato{
         background-color:rgb(255,255,255, 0);
@@ -183,6 +177,7 @@ a:active{
         background-color: rgb(255,255,255);
         border-radius: 5px;
         font-size: 15px;
+        margin-bottom: 0px;
     }
     option{
         background-color: white;
@@ -205,7 +200,7 @@ a:active{
         display: flex;
         align-items: center;
         position: relative;
-        bottom: 252px;
+        bottom: 310px;
         left: 275px;
     }
 
@@ -231,9 +226,13 @@ a:active{
         background-color:rgb(255,255,255, 0);
     }
     .alerta{
-        font-size: 10px;
-        margin-top: 2px;
+        font-size: 15px;
+        margin-top: 0px;
+        border: 0px;
+        padding: 0px;
         color: red;
+        background-color:rgb(255,255,255, 0);
+        width: 230px;
     }
     
 
