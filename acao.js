@@ -1,3 +1,6 @@
+// --------------- DADOS ---------------// 
+var numeros= [];
+
 // --------------- FECHAR E ABRIR QUESTIONÁRIO ---------------// 
 var btnform= document.querySelector("#adccandidato");
 var questionario= document.querySelector(".questionario");
@@ -8,12 +11,16 @@ function mostrar(){
 btnform.addEventListener("click",mostrar);
 
 
-// --------------- TESTA SE P FORMULÁRIO FOI PREENCHIDO -----------------// 
+// --------------- TESTA SE O FORMULÁRIO FOI PREENCHIDO -----------------// 
 
 var btnadicionar= document.querySelector("#adicionar");
 var rep= document.querySelectorAll(".input");
 var br1= document.querySelectorAll(".br");
 var vezes=0; 
+
+function insertAfter(newElement, reference) {
+    reference.parentNode.insertBefore(newElement, reference.nextSibling);
+}
 
 function teste(){ 
 
@@ -21,6 +28,7 @@ function teste(){
 
     // --------------- ADICIONAR UMA DIV DEPOIS DO PREENCHIMENTO DO FORMULÁRIO-----------------// 
     
+        // --- inserindo div antes do adicionar aluno --- //
         let sp1= document.createElement('div');
         sp1.className= "info";
 
@@ -28,8 +36,16 @@ function teste(){
         var divPai= sp2.parentNode;
 
         (divPai.insertBefore(sp1,sp2)).style.display="block";
-    
-        
+
+        // ---inserindo numero digitado na div --- //
+        let num1= document.createElement('p');
+        num1.className= "numero";
+        num1.innerText= rep[2].value;
+        insertAfter(num1, sp2);
+        num1.style.display="block";
+        numeros.push(rep[2].value);
+
+
         questionario.style.display= "none";
 
             for(var i=0; i < 3; i++){
@@ -46,6 +62,8 @@ function teste(){
         
             ocultar();
             vezes=0;
+
+        console.log(numeros);
             
     }else if(vezes == 0){
 
