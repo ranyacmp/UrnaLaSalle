@@ -78,7 +78,7 @@ a:active{
         margin: 15px;
         display: none;
     }
-    #numero{
+    .numero{
         font-family: 'Tilt Warp', cursive;
         font-size: 45px;
         width: 60px;
@@ -91,7 +91,7 @@ a:active{
         left:5px;
         z-index:1;
     }
-    #imagem{
+    .imagem{
         width: 180px;
         height: 190px;
         position: relative;
@@ -100,7 +100,7 @@ a:active{
         border-radius: 15px;
     }
     
-    #representante{
+    .representante{
         width: 170px;
         height: 25px;
         font-size: 18px;
@@ -113,7 +113,7 @@ a:active{
         left: 15px;
         top:-10px;
     }
-    #vice-representante{
+    .vice-representante{
         width: 160px;
         height: 25px;
         font-size: 18px;
@@ -178,6 +178,7 @@ a:active{
         border-radius: 5px;
         font-size: 15px;
         margin-bottom: 0px;
+        text-transform: uppercase;
     }
     option{
         background-color: white;
@@ -235,5 +236,4 @@ a:active{
         width: 230px;
     }
     
-
 }

@@ -13,14 +13,13 @@ btnform.addEventListener("click",mostrar);
 var btnadicionar= document.querySelector("#adicionar");
 var rep= document.querySelectorAll(".input");
 var br1= document.querySelectorAll(".br");
+var vezes=0; 
 
-
-// --------------- ADICIONAR UMA DIV DEPOIS DO PREENCHIMENTO DO FORMULÁRIO-----------------// 
-
-
-function teste(){
+function teste(){ 
 
     if(rep[0].value != "" && rep[1].value != "" && rep[2].value != ""){
+
+    // --------------- ADICIONAR UMA DIV DEPOIS DO PREENCHIMENTO DO FORMULÁRIO-----------------// 
     
         let sp1= document.createElement('div');
         sp1.className= "info";
@@ -29,62 +28,86 @@ function teste(){
         var divPai= sp2.parentNode;
 
         (divPai.insertBefore(sp1,sp2)).style.display="block";
-
+    
+        
         questionario.style.display= "none";
 
-    }else{
+            for(var i=0; i < 3; i++){
 
-        var titulo= document.querySelectorAll(".titulo");
+                br1[i].style.display= "block";
 
-        if(rep[0].value == ""){
+            }
 
-            let t1= document.createElement('p');
-            t1.className="alerta";
-            t1.innerText= "Inserir nome do representante"
+            for(var i=0; i < 3; i++){
 
-            var divPai2= titulo[1].parentNode;
+                rep[i].value= "";
 
-            divPai2.insertBefore(t1,titulo[1]);
-
-            br1[0].style.display= "none";
-
-        }
-        if(rep[1].value == ""){
-
-            let t3= document.createElement('p');
-            t3.className="alerta";
-            t3.innerText= "Inserir nome do vice-representante"
-
+            }
+        
+            ocultar();
+            vezes=0;
             
-            var divPai3= titulo[2].parentNode;
+    }else if(vezes == 0){
 
-            divPai3.insertBefore(t3,titulo[2]);
+    // --------------- ADICIONAR UMA MENSAGEM PARA PREENCHER OS CAMPOS-----------------//
+        
+        var titulo= document.querySelectorAll(".titulo");
+        
 
-            br1[1].style.display= "none";
+            if(rep[0].value == ""){
 
-        }
-        if(rep[2].value == ""){
+                let t1= document.createElement('p');
+                t1.className="alerta";
+                t1.innerText= "Inserir nome do representante"
 
-            let t4= document.createElement('p');
-            t4.className="alerta";
-            t4.innerText= "Inserir número"
+                var divPai2= titulo[1].parentNode;
 
-            var titulo2= document.querySelector("#adicionar");
-            var divPai4= titulo2.parentNode;
+                divPai2.insertBefore(t1,titulo[1]);
 
-            divPai4.insertBefore(t4,titulo2);
+                br1[0].style.display= "none";
 
-            br1[2].style.display= "none";
+            }
 
-        }
-       
+        
+            if(rep[1].value == ""){
+
+                let t3= document.createElement('p');
+                t3.className="alerta";
+                t3.innerText= "Inserir nome do vice-representante"
+
+                var divPai3= titulo[2].parentNode;
+
+                divPai3.insertBefore(t3,titulo[2]);
+
+                br1[1].style.display= "none";   
+            
+            }
+
+            if(rep[2].value == ""){
+
+                let t4= document.createElement('p');
+                t4.className="alerta";
+                t4.innerText= "Inserir número"
+
+                var titulo2= document.querySelector("#adicionar");
+                var divPai4= titulo2.parentNode;
+
+                divPai4.insertBefore(t4,titulo2);
+
+                br1[2].style.display= "none";
+                
+            }
+            
+            vezes++; 
+    }
 
     
-    }
+
 }
 btnadicionar.addEventListener("click", teste);
 
-// --------------- FECHARQUESTIONÁRIO ---------------//
+
+// --------------------------------------- FECHAR QUESTIONÁRIO ---------------------------------------  //
 
 var fechar= document.querySelector("#fecharquestionario");
 
@@ -92,15 +115,25 @@ function ocultar(){
     questionario.style.display= "none";
     var alertas= document.querySelectorAll(".alerta");
 
-    for(var i=0; i < 3; i++){
+    for(var i=0; i < alertas.length; i++){
         alertas[i].remove();
     }
 
     for(var i=0; i < 3; i++){
         br1[i].style.display= "block";
     }
+
 }
 fechar.addEventListener("click",ocultar);
+
+// function removerAlertas(){
+
+//     for(var i=0; i < alertas.length; i++){
+//         alertas[i].remove();
+//     }
+
+// }
+// btnadicionar.addEventListener("click", removerAlertas);
 
 
 
