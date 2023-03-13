@@ -21,7 +21,7 @@ var vezes=0;
 function insertAfter(newElement, reference) {
     reference.parentNode.insertBefore(newElement, reference.nextSibling);
 }
-
+var n =1;
 function teste(){ 
 
     if(rep[0].value != "" && rep[1].value != "" && rep[2].value != ""){
@@ -38,32 +38,20 @@ function teste(){
         (divPai.insertBefore(sp1,sp2)).style.display="block";
 
         // ---inserindo numero digitado na div --- //
-        let num1= document.createElement('p');
-        num1.className= "numero";
+        var divs= document.querySelectorAll(".info");
+        let num1= document.createElement("p");
+        num1.classList.add("numero");
         num1.innerText= rep[2].value;
-        insertAfter(num1, sp2);
-        num1.style.display="block";
+        (divs[n].appendChild(num1)).style.display="block";;
         numeros.push(rep[2].value);
 
-
-        questionario.style.display= "none";
-
-            for(var i=0; i < 3; i++){
-
-                br1[i].style.display= "block";
-
-            }
-
-            for(var i=0; i < 3; i++){
-
-                rep[i].value= "";
-
-            }
-        
+        // ---inserindo nome representante digitado na div --- //
+      
             ocultar();
             vezes=0;
+            n++;
 
-        console.log(numeros);
+        // console.log(numeros);
             
     }else if(vezes == 0){
 
@@ -117,6 +105,7 @@ function teste(){
             }
             
             vezes++; 
+    // ------------------------------------------------------------------------------- //    
     }
 
     
@@ -141,21 +130,16 @@ function ocultar(){
         br1[i].style.display= "block";
     }
 
+    for(var i=0; i < 3; i++){
+
+        rep[i].value= "";
+
+    }
+
 }
 fechar.addEventListener("click",ocultar);
 
-// function removerAlertas(){
-
-//     for(var i=0; i < alertas.length; i++){
-//         alertas[i].remove();
-//     }
-
-// }
-// btnadicionar.addEventListener("click", removerAlertas);
-
-
-
-
+// -----------------------------------------------------------------------------------------------------  //
 
 
 

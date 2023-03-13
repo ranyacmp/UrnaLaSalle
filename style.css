@@ -86,9 +86,9 @@ a:active{
         border-radius: 150%;
         text-align: center;
         color:white;
-        position: absolute;
-        top:5px;
-        left:5px;
+        position: relative;
+       top:-20px;
+       left: -8px;
         z-index:1;
         display:none;
     }
@@ -96,7 +96,7 @@ a:active{
         width: 180px;
         height: 190px;
         position: relative;
-        top:10px;
+        top:-45px;
         left: 10px;
         border-radius: 15px;
     }
@@ -113,6 +113,7 @@ a:active{
         position: relative;
         left: 15px;
         top:-10px;
+        display:none;
     }
     .vice-representante{
         width: 160px;
@@ -155,13 +156,14 @@ a:active{
         top:-45px;
         border-radius: 30px;
         display:none;
+        z-index: 2;
     }
 
     #formulario{
         background-color: rgb(233,194,25, 0);
         position: relative;
         left: 15px;
-        top: 40px
+        top: 40px;
     }
     .titulo{
         font-family: 'Anton', sans-serif;
