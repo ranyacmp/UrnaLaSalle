@@ -37,15 +37,35 @@ function teste(){
 
         (divPai.insertBefore(sp1,sp2)).style.display="block";
 
-        // ---inserindo numero digitado na div --- //
+        // --------------------------------------------- //
+
         var divs= document.querySelectorAll(".info");
+
+        // ---inserindo numero digitado na div --- //
+
         let num1= document.createElement("p");
         num1.classList.add("numero");
         num1.innerText= rep[2].value;
-        (divs[n].appendChild(num1)).style.display="block";;
+        (divs[n].appendChild(num1)).style.display="block";
         numeros.push(rep[2].value);
+        
 
         // ---inserindo nome representante digitado na div --- //
+
+        let reps1= document.createElement("p");
+        reps1.classList.add("representante");
+        reps1.innerText= rep[0].value; 
+        (divs[n].appendChild(reps1)).style.display="block";
+        
+
+        // ---inserindo nome vice representante digitado na div --- //
+
+        let vicereps1= document.createElement("p");
+        vicereps1.classList.add("vice-representante");
+        vicereps1.innerText= rep[1].value; 
+        (divs[n].appendChild(vicereps1)).style.display="block";
+        
+        
       
             ocultar();
             vezes=0;
